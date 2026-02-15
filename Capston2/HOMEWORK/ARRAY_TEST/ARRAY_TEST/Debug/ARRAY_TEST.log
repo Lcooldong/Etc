@@ -1,0 +1,10 @@
+﻿  main.c
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(227,26): warning C4047: '함수': 'pStudent'의 간접 참조 수준이 'Student (*)[3]'과(와) 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(227,14): warning C4024: 'printStruct': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(231,23): warning C4047: '함수': 'pStudent'의 간접 참조 수준이 'Student (*)[3]'과(와) 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(231,11): warning C4024: 'sortData': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(232,26): warning C4047: '함수': 'pStudent'의 간접 참조 수준이 'Student (*)[3]'과(와) 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(232,14): warning C4024: 'printStruct': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(240,35): warning C4047: '함수': 'pStudent'의 간접 참조 수준이 'Student (*)[3]'과(와) 다릅니다.
+D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\ARRAY_TEST\main.c(240,23): warning C4024: 'saveText': 형식 및 실제 매개 변수 2의 형식이 서로 다릅니다.
+  ARRAY_TEST.vcxproj -> D:\Github\CAPSTONE_2\HOMEWORK\ARRAY_TEST\Debug\ARRAY_TEST.exe

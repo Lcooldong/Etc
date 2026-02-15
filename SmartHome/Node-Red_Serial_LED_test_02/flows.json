@@ -1,0 +1,186 @@
+[
+    {
+        "id": "1fa10bb8a783fcbf",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "2de11dadc61f306f",
+        "type": "ui_switch",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "d6e8696a7e21853e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "180a080751f25760",
+                "d23b2a4b266c2c99",
+                "11ab4334f90416fc"
+            ]
+        ]
+    },
+    {
+        "id": "11ab4334f90416fc",
+        "type": "serial out",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "",
+        "x": 350,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "180a080751f25760",
+        "type": "debug",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d23b2a4b266c2c99",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "switch_text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2b319f9a8a6adbc5",
+        "type": "serial in",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "d07c917994c9fb2a",
+                "50287fe4c08ff6a6"
+            ]
+        ]
+    },
+    {
+        "id": "d07c917994c9fb2a",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Serial_Button",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 360,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "50287fe4c08ff6a6",
+        "type": "function",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "func": "var data = msg.payload;\n\nif(data == \"0\\r\\n\")\n{\n    msg.output = \"버튼 안 누른 상태\";\n    \n}\nelse if(data == \"1\\r\\n\")\n{\n    msg.output = \"버튼 누른 상태\";\n\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 500,
+        "wires": [
+            [
+                "7cce2551d6736251",
+                "adf162fe1f7fc723"
+            ]
+        ]
+    },
+    {
+        "id": "7cce2551d6736251",
+        "type": "debug",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "output",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "adf162fe1f7fc723",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "funtion_text",
+        "format": "{{msg.output}}",
+        "layout": "row-spread",
+        "x": 540,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "d6e8696a7e21853e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "d90f0cbfdada5de5",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d90f0cbfdada5de5",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    }
+]

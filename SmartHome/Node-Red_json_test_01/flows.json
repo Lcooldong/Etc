@@ -1,0 +1,222 @@
+[
+    {
+        "id": "1fa10bb8a783fcbf",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "0f29c85c2ffe45e5",
+        "type": "serial in",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "b26b2a0166d4d03d",
+        "x": 210,
+        "y": 120,
+        "wires": [
+            [
+                "8e090ec30ca1ad88",
+                "51b138b831f610e7"
+            ]
+        ]
+    },
+    {
+        "id": "14fba7f40d80feab",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor1",
+        "format": "{{msg.payload.sensor1}}",
+        "layout": "row-spread",
+        "x": 540,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "0cd956b1dd31b25c",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor2",
+        "format": "{{msg.payload.sensor2}}",
+        "layout": "row-spread",
+        "x": 540,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "945fc41a0936d3cc",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "sensor3",
+        "format": "{{msg.payload.sensor3}}",
+        "layout": "row-spread",
+        "x": 540,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8e090ec30ca1ad88",
+        "type": "debug",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "51b138b831f610e7",
+        "type": "json",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "14fba7f40d80feab",
+                "0cd956b1dd31b25c",
+                "945fc41a0936d3cc",
+                "e80103cb48d89fe2",
+                "baddd6a9b39d26ba",
+                "a7ac97bae0ed774b"
+            ]
+        ]
+    },
+    {
+        "id": "e80103cb48d89fe2",
+        "type": "ui_gauge",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{msg.payload.sensor1}}",
+        "min": 0,
+        "max": "1023",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "700",
+        "x": 530,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "baddd6a9b39d26ba",
+        "type": "ui_gauge",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{msg.payload.sensor2}}",
+        "min": 0,
+        "max": "1023",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "700",
+        "x": 530,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "a7ac97bae0ed774b",
+        "type": "ui_gauge",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{msg.payload.sensor3}}",
+        "min": 0,
+        "max": "1023",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "700",
+        "x": 530,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b26b2a0166d4d03d",
+        "type": "serial-port",
+        "serialport": "COM4",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d6e8696a7e21853e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "d90f0cbfdada5de5",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d90f0cbfdada5de5",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    }
+]

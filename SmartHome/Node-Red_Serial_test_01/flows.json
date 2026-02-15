@@ -1,0 +1,111 @@
+[
+    {
+        "id": "1fa10bb8a783fcbf",
+        "type": "tab",
+        "label": "플로우 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "418a4c916220de85",
+        "type": "serial out",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "b26b2a0166d4d03d",
+        "x": 390,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f19d4268513d2761",
+        "type": "serial in",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "b26b2a0166d4d03d",
+        "x": 200,
+        "y": 140,
+        "wires": [
+            [
+                "74aa52657a1cb56b"
+            ]
+        ]
+    },
+    {
+        "id": "7ba7c45d597e515a",
+        "type": "ui_button",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 18,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "자 던진다",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "418a4c916220de85"
+            ]
+        ]
+    },
+    {
+        "id": "74aa52657a1cb56b",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 17,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 400,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b26b2a0166d4d03d",
+        "type": "serial-port",
+        "serialport": "COM4",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d6e8696a7e21853e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "d90f0cbfdada5de5",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d90f0cbfdada5de5",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    }
+]

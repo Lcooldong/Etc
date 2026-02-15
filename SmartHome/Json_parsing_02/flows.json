@@ -1,0 +1,179 @@
+[
+    {
+        "id": "1fa10bb8a783fcbf",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ac6c4c31798f2222",
+        "type": "serial in",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "serial": "b26b2a0166d4d03d",
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "43c7164ab019bbae",
+                "3cec458828bbfa27"
+            ]
+        ]
+    },
+    {
+        "id": "43c7164ab019bbae",
+        "type": "debug",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "3cec458828bbfa27",
+        "type": "json",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "38243c49689c4482",
+                "586e63aacec517bc",
+                "89ca7111b18fbe1e",
+                "c6d76701042d5e84"
+            ]
+        ]
+    },
+    {
+        "id": "38243c49689c4482",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "btn1_value",
+        "format": "{{msg.payload.btn1}}",
+        "layout": "row-spread",
+        "x": 750,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "586e63aacec517bc",
+        "type": "ui_text",
+        "z": "1fa10bb8a783fcbf",
+        "group": "d6e8696a7e21853e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "btn2_value",
+        "format": "{{msg.payload.btn2}}",
+        "layout": "row-spread",
+        "x": 750,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "89ca7111b18fbe1e",
+        "type": "ui_gauge",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{msg.payload.btn1}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 740,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "c6d76701042d5e84",
+        "type": "ui_gauge",
+        "z": "1fa10bb8a783fcbf",
+        "name": "",
+        "group": "d6e8696a7e21853e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{msg.payload.btn2}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 740,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "b26b2a0166d4d03d",
+        "type": "serial-port",
+        "serialport": "COM4",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "d6e8696a7e21853e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "d90f0cbfdada5de5",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d90f0cbfdada5de5",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    }
+]

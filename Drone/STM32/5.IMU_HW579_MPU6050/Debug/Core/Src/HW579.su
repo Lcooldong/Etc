@@ -1,0 +1,2 @@
+../Core/Src/HW579.c:24:6:HW579_Init	24	static
+../Core/Src/HW579.c:42:6:getI2C_Address	32	static

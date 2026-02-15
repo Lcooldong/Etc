@@ -1,0 +1,4 @@
+../Core/Src/main.C:54:16:int _write(int32_t, uint8_t*, int32_t)	24	static
+../Core/Src/main.C:72:5:int main()	8	static
+../Core/Src/main.C:119:6:void SystemClock_Config()	88	static
+../Core/Src/main.C:175:6:void Error_Handler()	4	static,ignoring_inline_asm

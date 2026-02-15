@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"debuguart\startup_stm32f103xg.o"
+"debuguart\main.o"
+"debuguart\stm32f1xx_it.o"
+"debuguart\stm32f1xx_hal_msp.o"
+"debuguart\stm32f1xx_hal_gpio_ex.o"
+"debuguart\stm32f1xx_hal_tim.o"
+"debuguart\stm32f1xx_hal_tim_ex.o"
+"debuguart\stm32f1xx_hal_uart.o"
+"debuguart\stm32f1xx_hal.o"
+"debuguart\stm32f1xx_hal_rcc.o"
+"debuguart\stm32f1xx_hal_rcc_ex.o"
+"debuguart\stm32f1xx_hal_gpio.o"
+"debuguart\stm32f1xx_hal_dma.o"
+"debuguart\stm32f1xx_hal_cortex.o"
+"debuguart\stm32f1xx_hal_pwr.o"
+"debuguart\stm32f1xx_hal_flash.o"
+"debuguart\stm32f1xx_hal_flash_ex.o"
+"debuguart\stm32f1xx_hal_exti.o"
+"debuguart\system_stm32f1xx.o"
+--strict --scatter "DebugUart\DebugUart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DebugUart.map" -o DebugUart\DebugUart.axf

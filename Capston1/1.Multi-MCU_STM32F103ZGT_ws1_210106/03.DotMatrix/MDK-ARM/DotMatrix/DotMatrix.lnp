@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dotmatrix\startup_stm32f103xg.o"
+"dotmatrix\main.o"
+"dotmatrix\stm32f1xx_it.o"
+"dotmatrix\stm32f1xx_hal_msp.o"
+"dotmatrix\stm32f1xx_hal_gpio_ex.o"
+"dotmatrix\stm32f1xx_hal_tim.o"
+"dotmatrix\stm32f1xx_hal_tim_ex.o"
+"dotmatrix\stm32f1xx_hal.o"
+"dotmatrix\stm32f1xx_hal_rcc.o"
+"dotmatrix\stm32f1xx_hal_rcc_ex.o"
+"dotmatrix\stm32f1xx_hal_gpio.o"
+"dotmatrix\stm32f1xx_hal_dma.o"
+"dotmatrix\stm32f1xx_hal_cortex.o"
+"dotmatrix\stm32f1xx_hal_pwr.o"
+"dotmatrix\stm32f1xx_hal_flash.o"
+"dotmatrix\stm32f1xx_hal_flash_ex.o"
+"dotmatrix\stm32f1xx_hal_exti.o"
+"dotmatrix\system_stm32f1xx.o"
+--strict --scatter "DotMatrix\DotMatrix.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DotMatrix.map" -o DotMatrix\DotMatrix.axf

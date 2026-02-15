@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"16.gpio\startup_stm32f103xg.o"
+"16.gpio\main.o"
+"16.gpio\stm32f1xx_it.o"
+"16.gpio\stm32f1xx_hal_msp.o"
+"16.gpio\stm32f1xx_hal_gpio_ex.o"
+"16.gpio\stm32f1xx_hal_tim.o"
+"16.gpio\stm32f1xx_hal_tim_ex.o"
+"16.gpio\stm32f1xx_hal.o"
+"16.gpio\stm32f1xx_hal_rcc.o"
+"16.gpio\stm32f1xx_hal_rcc_ex.o"
+"16.gpio\stm32f1xx_hal_gpio.o"
+"16.gpio\stm32f1xx_hal_dma.o"
+"16.gpio\stm32f1xx_hal_cortex.o"
+"16.gpio\stm32f1xx_hal_pwr.o"
+"16.gpio\stm32f1xx_hal_flash.o"
+"16.gpio\stm32f1xx_hal_flash_ex.o"
+"16.gpio\stm32f1xx_hal_exti.o"
+"16.gpio\stm32f1xx_hal_uart.o"
+"16.gpio\system_stm32f1xx.o"
+--strict --scatter "16.gpio\16.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "16.map" -o 16.gpio\16.gpio

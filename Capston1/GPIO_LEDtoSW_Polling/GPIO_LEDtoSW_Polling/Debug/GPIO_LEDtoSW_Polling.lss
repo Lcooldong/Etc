@@ -1,0 +1,355 @@
+
+GPIO_LEDtoSW_Polling.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  00000254  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000200  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000254  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000284  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000088  00000000  00000000  000002c4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000011a4  00000000  00000000  0000034c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000d88  00000000  00000000  000014f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000062d  00000000  00000000  00002278  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000000bc  00000000  00000000  000028a8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000006aa  00000000  00000000  00002964  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000020c  00000000  00000000  0000300e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000058  00000000  00000000  0000321a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	79 c0       	rjmp	.+242    	; 0xf8 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	75 c0       	rjmp	.+234    	; 0xf8 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	73 c0       	rjmp	.+230    	; 0xf8 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	71 c0       	rjmp	.+226    	; 0xf8 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6f c0       	rjmp	.+222    	; 0xf8 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	6d c0       	rjmp	.+218    	; 0xf8 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	6b c0       	rjmp	.+214    	; 0xf8 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	69 c0       	rjmp	.+210    	; 0xf8 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	67 c0       	rjmp	.+206    	; 0xf8 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	65 c0       	rjmp	.+202    	; 0xf8 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	61 c0       	rjmp	.+194    	; 0xf8 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5f c0       	rjmp	.+190    	; 0xf8 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	5d c0       	rjmp	.+186    	; 0xf8 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	5b c0       	rjmp	.+182    	; 0xf8 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	59 c0       	rjmp	.+178    	; 0xf8 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	57 c0       	rjmp	.+174    	; 0xf8 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	55 c0       	rjmp	.+170    	; 0xf8 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	53 c0       	rjmp	.+166    	; 0xf8 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	51 c0       	rjmp	.+162    	; 0xf8 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4f c0       	rjmp	.+158    	; 0xf8 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4d c0       	rjmp	.+154    	; 0xf8 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	4b c0       	rjmp	.+150    	; 0xf8 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	49 c0       	rjmp	.+146    	; 0xf8 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	47 c0       	rjmp	.+142    	; 0xf8 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	45 c0       	rjmp	.+138    	; 0xf8 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	43 c0       	rjmp	.+134    	; 0xf8 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	41 c0       	rjmp	.+130    	; 0xf8 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3f c0       	rjmp	.+126    	; 0xf8 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	3d c0       	rjmp	.+122    	; 0xf8 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	3b c0       	rjmp	.+118    	; 0xf8 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	39 c0       	rjmp	.+114    	; 0xf8 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	37 c0       	rjmp	.+110    	; 0xf8 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	35 c0       	rjmp	.+106    	; 0xf8 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	33 c0       	rjmp	.+102    	; 0xf8 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	31 c0       	rjmp	.+98     	; 0xf8 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2f c0       	rjmp	.+94     	; 0xf8 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	2d c0       	rjmp	.+90     	; 0xf8 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	2b c0       	rjmp	.+86     	; 0xf8 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	29 c0       	rjmp	.+82     	; 0xf8 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	27 c0       	rjmp	.+78     	; 0xf8 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	25 c0       	rjmp	.+74     	; 0xf8 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	23 c0       	rjmp	.+70     	; 0xf8 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	21 c0       	rjmp	.+66     	; 0xf8 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1f c0       	rjmp	.+62     	; 0xf8 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	1d c0       	rjmp	.+58     	; 0xf8 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	1b c0       	rjmp	.+54     	; 0xf8 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	19 c0       	rjmp	.+50     	; 0xf8 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	17 c0       	rjmp	.+46     	; 0xf8 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	15 c0       	rjmp	.+42     	; 0xf8 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	13 c0       	rjmp	.+38     	; 0xf8 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	11 c0       	rjmp	.+34     	; 0xf8 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	0f c0       	rjmp	.+30     	; 0xf8 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	0d c0       	rjmp	.+26     	; 0xf8 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	0b c0       	rjmp	.+22     	; 0xf8 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+  f4:	42 d0       	rcall	.+132    	; 0x17a <main>
+  f6:	82 c0       	rjmp	.+260    	; 0x1fc <_exit>
+
+000000f8 <__bad_interrupt>:
+  f8:	83 cf       	rjmp	.-250    	; 0x0 <__vectors>
+
+000000fa <GPIO_WritePin>:
+  fa:	4f 3f       	cpi	r20, 0xFF	; 255
+  fc:	61 f4       	brne	.+24     	; 0x116 <GPIO_WritePin+0x1c>
+  fe:	fc 01       	movw	r30, r24
+ 100:	40 81       	ld	r20, Z
+ 102:	21 e0       	ldi	r18, 0x01	; 1
+ 104:	30 e0       	ldi	r19, 0x00	; 0
+ 106:	02 c0       	rjmp	.+4      	; 0x10c <GPIO_WritePin+0x12>
+ 108:	22 0f       	add	r18, r18
+ 10a:	33 1f       	adc	r19, r19
+ 10c:	6a 95       	dec	r22
+ 10e:	e2 f7       	brpl	.-8      	; 0x108 <GPIO_WritePin+0xe>
+ 110:	24 27       	eor	r18, r20
+ 112:	20 83       	st	Z, r18
+ 114:	08 95       	ret
+ 116:	41 11       	cpse	r20, r1
+ 118:	0d c0       	rjmp	.+26     	; 0x134 <GPIO_WritePin+0x3a>
+ 11a:	fc 01       	movw	r30, r24
+ 11c:	40 81       	ld	r20, Z
+ 11e:	21 e0       	ldi	r18, 0x01	; 1
+ 120:	30 e0       	ldi	r19, 0x00	; 0
+ 122:	02 c0       	rjmp	.+4      	; 0x128 <GPIO_WritePin+0x2e>
+ 124:	22 0f       	add	r18, r18
+ 126:	33 1f       	adc	r19, r19
+ 128:	6a 95       	dec	r22
+ 12a:	e2 f7       	brpl	.-8      	; 0x124 <GPIO_WritePin+0x2a>
+ 12c:	20 95       	com	r18
+ 12e:	24 23       	and	r18, r20
+ 130:	20 83       	st	Z, r18
+ 132:	08 95       	ret
+ 134:	14 16       	cp	r1, r20
+ 136:	5c f4       	brge	.+22     	; 0x14e <GPIO_WritePin+0x54>
+ 138:	fc 01       	movw	r30, r24
+ 13a:	40 81       	ld	r20, Z
+ 13c:	21 e0       	ldi	r18, 0x01	; 1
+ 13e:	30 e0       	ldi	r19, 0x00	; 0
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <GPIO_WritePin+0x4c>
+ 142:	22 0f       	add	r18, r18
+ 144:	33 1f       	adc	r19, r19
+ 146:	6a 95       	dec	r22
+ 148:	e2 f7       	brpl	.-8      	; 0x142 <GPIO_WritePin+0x48>
+ 14a:	24 2b       	or	r18, r20
+ 14c:	20 83       	st	Z, r18
+ 14e:	08 95       	ret
+
+00000150 <Protect_IO_Init>:
+ 150:	e1 e0       	ldi	r30, 0x01	; 1
+ 152:	f1 e0       	ldi	r31, 0x01	; 1
+ 154:	80 81       	ld	r24, Z
+ 156:	8c 67       	ori	r24, 0x7C	; 124
+ 158:	80 83       	st	Z, r24
+ 15a:	e2 e0       	ldi	r30, 0x02	; 2
+ 15c:	f1 e0       	ldi	r31, 0x01	; 1
+ 15e:	80 81       	ld	r24, Z
+ 160:	83 78       	andi	r24, 0x83	; 131
+ 162:	80 83       	st	Z, r24
+ 164:	9b 9a       	sbi	0x13, 3	; 19
+ 166:	a3 98       	cbi	0x14, 3	; 20
+ 168:	08 95       	ret
+
+0000016a <LEDtoSW_Init>:
+ 16a:	8f ef       	ldi	r24, 0xFF	; 255
+ 16c:	87 b9       	out	0x07, r24	; 7
+ 16e:	18 b8       	out	0x08, r1	; 8
+ 170:	10 92 0a 01 	sts	0x010A, r1	; 0x80010a <__TEXT_REGION_LENGTH__+0x70010a>
+ 174:	10 92 09 01 	sts	0x0109, r1	; 0x800109 <__TEXT_REGION_LENGTH__+0x700109>
+ 178:	08 95       	ret
+
+0000017a <main>:
+/* USER CODE END Includes */
+
+
+int main(void)
+{
+	DDRH=0xFF;
+ 17a:	8f ef       	ldi	r24, 0xFF	; 255
+ 17c:	80 93 01 01 	sts	0x0101, r24	; 0x800101 <__TEXT_REGION_LENGTH__+0x700101>
+	PORTH=0x00;
+ 180:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <__TEXT_REGION_LENGTH__+0x700102>
+	
+	//Motor(Servo, Step, DC) 플로팅 현상 방지를 위한 IO 설정
+	Protect_IO_Init();
+ 184:	e5 df       	rcall	.-54     	; 0x150 <Protect_IO_Init>
+	
+	//LED & SW DDR,PORT Setting
+	LEDtoSW_Init();
+ 186:	f1 df       	rcall	.-30     	; 0x16a <LEDtoSW_Init>
+ 188:	c0 e0       	ldi	r28, 0x00	; 0
+ 18a:	4f ef       	ldi	r20, 0xFF	; 255
+	
+	//LED TEST
+	for(int PinIndex = 0; PinIndex < 8; PinIndex++){
+		GPIO_WritePin(&LED_PORTC, PinIndex, GPIO_PIN_TOGGLE);
+ 18c:	6c 2f       	mov	r22, r28
+ 18e:	88 e2       	ldi	r24, 0x28	; 40
+ 190:	90 e0       	ldi	r25, 0x00	; 0
+ 192:	b3 df       	rcall	.-154    	; 0xfa <GPIO_WritePin>
+ 194:	2f ef       	ldi	r18, 0xFF	; 255
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 196:	3f e3       	ldi	r19, 0x3F	; 63
+ 198:	82 e0       	ldi	r24, 0x02	; 2
+ 19a:	21 50       	subi	r18, 0x01	; 1
+ 19c:	30 40       	sbci	r19, 0x00	; 0
+ 19e:	80 40       	sbci	r24, 0x00	; 0
+ 1a0:	e1 f7       	brne	.-8      	; 0x19a <main+0x20>
+ 1a2:	00 c0       	rjmp	.+0      	; 0x1a4 <main+0x2a>
+ 1a4:	00 00       	nop
+ 1a6:	cf 5f       	subi	r28, 0xFF	; 255
+ 1a8:	c8 30       	cpi	r28, 0x08	; 8
+	
+	//LED & SW DDR,PORT Setting
+	LEDtoSW_Init();
+	
+	//LED TEST
+	for(int PinIndex = 0; PinIndex < 8; PinIndex++){
+ 1aa:	79 f7       	brne	.-34     	; 0x18a <main+0x10>
+ 1ac:	c0 e0       	ldi	r28, 0x00	; 0
+ 1ae:	4f ef       	ldi	r20, 0xFF	; 255
+		GPIO_WritePin(&LED_PORTC, PinIndex, GPIO_PIN_TOGGLE);
+		delay_ms(500);
+	}
+	for(int PinIndex = 0; PinIndex < 8; PinIndex++){
+		GPIO_WritePin(&LED_PORTC, PinIndex, GPIO_PIN_TOGGLE);
+ 1b0:	6c 2f       	mov	r22, r28
+ 1b2:	88 e2       	ldi	r24, 0x28	; 40
+ 1b4:	90 e0       	ldi	r25, 0x00	; 0
+ 1b6:	a1 df       	rcall	.-190    	; 0xfa <GPIO_WritePin>
+ 1b8:	9f ef       	ldi	r25, 0xFF	; 255
+ 1ba:	2f e3       	ldi	r18, 0x3F	; 63
+ 1bc:	32 e0       	ldi	r19, 0x02	; 2
+ 1be:	91 50       	subi	r25, 0x01	; 1
+ 1c0:	20 40       	sbci	r18, 0x00	; 0
+ 1c2:	30 40       	sbci	r19, 0x00	; 0
+ 1c4:	e1 f7       	brne	.-8      	; 0x1be <main+0x44>
+ 1c6:	00 c0       	rjmp	.+0      	; 0x1c8 <main+0x4e>
+ 1c8:	00 00       	nop
+ 1ca:	cf 5f       	subi	r28, 0xFF	; 255
+ 1cc:	c8 30       	cpi	r28, 0x08	; 8
+	//LED TEST
+	for(int PinIndex = 0; PinIndex < 8; PinIndex++){
+		GPIO_WritePin(&LED_PORTC, PinIndex, GPIO_PIN_TOGGLE);
+		delay_ms(500);
+	}
+	for(int PinIndex = 0; PinIndex < 8; PinIndex++){
+ 1ce:	79 f7       	brne	.-34     	; 0x1ae <main+0x34>
+ 1d0:	8f ef       	ldi	r24, 0xFF	; 255
+		//버튼 클릭 시 리플 발생으로 인한 오동작 방지
+	delay_ms(150);	
+#else
+	LED_PORTC = 0x00;
+	delay_ms(1500);
+	LED_PORTC = 0xFF;
+ 1d2:	18 b8       	out	0x08, r1	; 8
+		//각각의 스위치 클릭 시 해당 LED 점멸
+	SW_SHORT_Press_Event(SW_PINL & 0xFF);
+		//버튼 클릭 시 리플 발생으로 인한 오동작 방지
+	delay_ms(150);	
+#else
+	LED_PORTC = 0x00;
+ 1d4:	9f ef       	ldi	r25, 0xFF	; 255
+ 1d6:	2f eb       	ldi	r18, 0xBF	; 191
+ 1d8:	36 e0       	ldi	r19, 0x06	; 6
+ 1da:	91 50       	subi	r25, 0x01	; 1
+ 1dc:	20 40       	sbci	r18, 0x00	; 0
+ 1de:	30 40       	sbci	r19, 0x00	; 0
+ 1e0:	e1 f7       	brne	.-8      	; 0x1da <main+0x60>
+ 1e2:	00 c0       	rjmp	.+0      	; 0x1e4 <main+0x6a>
+ 1e4:	00 00       	nop
+ 1e6:	88 b9       	out	0x08, r24	; 8
+	delay_ms(1500);
+	LED_PORTC = 0xFF;
+ 1e8:	9f ef       	ldi	r25, 0xFF	; 255
+ 1ea:	2f eb       	ldi	r18, 0xBF	; 191
+ 1ec:	36 e0       	ldi	r19, 0x06	; 6
+ 1ee:	91 50       	subi	r25, 0x01	; 1
+ 1f0:	20 40       	sbci	r18, 0x00	; 0
+ 1f2:	30 40       	sbci	r19, 0x00	; 0
+ 1f4:	e1 f7       	brne	.-8      	; 0x1ee <main+0x74>
+ 1f6:	00 c0       	rjmp	.+0      	; 0x1f8 <main+0x7e>
+ 1f8:	00 00       	nop
+ 1fa:	eb cf       	rjmp	.-42     	; 0x1d2 <main+0x58>
+
+000001fc <_exit>:
+ 1fc:	f8 94       	cli
+
+000001fe <__stop_program>:
+ 1fe:	ff cf       	rjmp	.-2      	; 0x1fe <__stop_program>

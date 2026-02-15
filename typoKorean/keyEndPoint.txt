@@ -1,0 +1,9 @@
+ccea9b0e13c74ea394f8e797d41faa0d
+671e6f627bf446ebb902331f3b50179a
+koreacentral
+https://computer-vision-findtypo.cognitiveservices.azure.com/
+
+715962f7b72e42baa252279935636b8a
+662109805dbe4498bc4cc83e06308ce2
+japaneast
+https://computer-vision-japan.cognitiveservices.azure.com/

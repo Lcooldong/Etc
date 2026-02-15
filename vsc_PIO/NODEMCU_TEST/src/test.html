@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Simple Mood Lamp</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+<body>
+    <div class="out-box">
+        <div class="content">
+ 
+            <div>
+           <input type="button" value="" id="onoff-button" onclick="onClickOnOffButton()">
+            </div>
+            <div class="brightness-content">
+                    <div class="float-parent">
+                        <div class="float-left">
+                                <input type="range" min="1" max="100" value="0"
+                                     id="brightness-slider" oninput="onInputSlider()"
+                                      onchange="onChangeBrightness()">
+                        </div>
+                        <div class="float-left" id="brightness-value"/>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  
+         crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>

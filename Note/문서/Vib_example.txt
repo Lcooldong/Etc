@@ -1,0 +1,35 @@
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(36, GPIO.OUT)
+GPIO.setup(38, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(40, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+flag = 0
+
+
+def flag_callback(channel):
+	flag = 1
+
+
+
+
+def vibrate_on():
+	while()
+	GPIO.output(36, GPIO.HIGH)
+	time.sleep(1)
+
+	
+
+
+def vibrate_off():
+	GPIO.output(36, GPIO.LOW)
+
+
+GPIO.add_event_detect(38, GPIO.FALLING, callback=flag_callback)
+
+
+try:
+	GPIO.wait_for_edge(40, GPIO.RISING)
+
+except 

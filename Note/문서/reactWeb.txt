@@ -1,0 +1,11 @@
+웹
+
+npm install create-react-app
+npx create-react-app 원하는 이름
+
+
+html :
+js : 
+css : 색, 위치 수정
+
+html("root") -index.js(App import) - App.js(component) export

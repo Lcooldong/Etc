@@ -1,0 +1,12 @@
+MAC (Media Access Control)
+네트워크 카드 하드웨어에 부여되는
+고유한 물리적 주소
+
+네트워크 통신 TCP/IP에서 
+IP -> MAC 변환   (ARP 과정)
+ARP(Address Resolution Protocol)
+
+MAC 주소 48Bit 
+쉽게 접근할 수 있도록 16진수로 표현
+주소 앞 6자리(OUI) : 제조사
+OUI(Organizational Unique Identifier)

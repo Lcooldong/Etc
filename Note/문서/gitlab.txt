@@ -1,0 +1,110 @@
+1. SETUP
+cmd 실행
+
+cd ..	(cd 띄고 점점)
+cd ..
+현재 위치가
+C:\  라고 떠야함
+
+git config --global user.name "본인이름"
+
+git config --global user.email "본인이메일"
+
+git config --list  <- 이름, 이메일 확인용
+
+git clone https://lab.hanium.or.kr/21_PG010/21_pg010.git
+
+21_pg010  <- 폴더 생성되고 들어가짐
+
+(dir 치면 디렉토리 확인 가능)
+
+
+
+
+2. Upload File
+
+폴더에 파일을 옮긴후 
+
+git add 파일명	<- 파일 추가
+git add .		<- 폴더에 들어 있는 전체 파일 추가(add 다음 띄어쓰기 필수)
+
+git commit -m "원하는 말"
+
+git push -u
+
+
+
+
+3. 한이음 gitlab 홈페이지 확인
+
+
+
+
+4. 브랜치
+
+git branch {원하는 브랜치 이름}
+
+git branch  <- 브랜치 확인
+
+git checkout {원하는 브랜치 이름}   <- 해당 브랜치로 전환
+
+git checkout -d {원하는 브랜치 이름}  <- 브랜치 삭제
+
+
+<브랜치 올리기> (-u 새로 추가 기능)
+
+git push -u origin {원하는 브랜치 이름}  <- 처음 만들기 브랜치 홈페이지에 올리기
+git push origin {원하는 브랜치 이름} <- 이후 부터는 그냥올릴 수 있음(삭제후 만들때도됨)
+
+
+이후 작업은 
+옮긴 브랜치에서 위 2번 add, commit push 수행하면됨
+
+
+
+
+
+5. 브랜치 병합 요청  (본인 브랜치 -> master)
+
+홈페이지 좌측 메뉴
+
+Merge Request 누르고 New merge request
+
+본인 브랜치 - > 타겟 브랜치
+
+
+설명 쓰고 다른 거 딱히 안눌러도됨
+
+
+
+
+
+6. 병합 요청 수락하기 
+
+Merge Request 누르고 해당 요청 누르고 Merge 버튼 누르면 해결
+
+
+
+
+
+
+7. 최신 이력 업데이트
+
+git fetch   <-내용 확인
+
+git pull	 <-데이터 가져오기
+
+
+8. 충돌 내용 확인
+
+git status  <-충돌 내용 확인
+
+마스터에서 올릴 때는
+git push origin master  
+{브랜치명} 없어도됨
+
+
+
+
+
+

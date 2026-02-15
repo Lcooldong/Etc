@@ -1,0 +1,38 @@
+공모전 - 8월
+전시회 - 11월
+
+1. 영상처리에서 기존에 있는 것이 아닌 새로운 물체를 인식하기 위한 데이터 획득 방법
+- 사람 얼굴 이미 있는 것으로 가능 
+- 식재료를 인식 
+-> 사진 labeling , 직접은 비추
+-> 적용
+-> AI hub(  https://aihub.or.kr/   )
+-> 사용하고자 한 재료를 학습, 인식 (환경을 제한)
+-> 이미 있는 자료 사용
+
+2. 영상 처리를 하기 위한 기술  Python, OpenCV , Pytorch <- 사용
+window 도 상관없다.
+
+3. 라즈베리파이, 느려서 괜찮을까요? 
+->네트워크 VGGNet, ResNet
+->U-net, Mask R-CNN  라인 따기
+
+4. 무게 센서, 레이저 라인, 서보모터랑 레어저 각 맞춰주면 <- Camera Calibration 
+- external <- 사용 - OpenCV 함수-checkerboard- 좌표 계산 가능(선형 대수학)
+- internal()  
+
+딥러닝  - 길고 짧은 쪽  긴 쪽 4등분 *
+           - 물체 네모 4등분 *
+
+5. 칼 안쓰는 요리
+
+6. 카메라 추천? 일반 웹캠으로 가능한가요.
+image net ( http://www.image-net.org/index )
+kaggle ( https://www.kaggle.com/ )
+화질 좋은편이 낫다.
+
+7. 또 다른 환경 제한을 통한 방법 
+색 구분
+- 식탁 : 흰색
+- 당근 : 빨간 색
+

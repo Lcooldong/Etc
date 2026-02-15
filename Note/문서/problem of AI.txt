@@ -1,0 +1,3 @@
+overfitting	#고지식  -> DropOut(네트워크 끊기), Batch Normalization(정밀도 낮추기)
+vanishing gradient	#
+datasets were too small & computers were too slow

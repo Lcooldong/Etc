@@ -1,0 +1,15 @@
+ReLU
+CNN - Convolutional Neural Network	(중첩 적분)
+-stride(몇 칸씩 밀 것인가)
+#zero padding(stride 및 filter에 의한 영상 작아짐을 방지)
+예 : 이미지  32x32x3 (두께 3 : RGB)
+#Max pooling - 최대값으로 출력, 영상 사이즈 줆어듬
+
+learning rate 학습률 (가중치) 
+batch size 
+
+SGD(확률적 경사 하강법) Momentum 
+-local minima 해결을 위해(오류(미분, 경사)가 0인 지점)
+-Adam 또는 RMSProp
+
+ 다음시간 RNN

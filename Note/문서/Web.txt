@@ -1,0 +1,125 @@
+accessibility - public domain
+	   - tag- data
+
+attribute - more info
+
+
+Ordered List
+Unordered List
+parent-child
+
+<a></a>  anchor
+href(hyper text=link, reference)
+
+
+Internet - 통신
+[[web], [FTP], [email],...]
+
+
+Tim Berners-Lee
+
+정보를 공유하기 위한
+World Wide Web 이라는 웹 브라우저 프로그램 만듬
+Web Server - 최초의 웹사이트 info.cern.ch 주소
+
+<WEB HOSTING>
+https://www.bitballoon.com/
+http://neocities.org/
+Amazin S3
+Google Cloud Storage
+https://firebase.google.com/
+Azure Blob
+https://www.netlify.com
+https://pages.cloudflare.com/
+
+
+Back End 추가
+php
+jsp
+python django
+
+
+tawk 채팅 위젯
+
+
+내가 필요한 부분.
+Node.js 를 이용한 arduino API 활용
+Arduino-> json -> javascript-html-css  - spring
+Javascript 실습, CSS 실습
+React 나 Ruby, Go 를 이용한 예쁜 홈페이지
+
+--------------------------
+program- 순서 의미 포함
+programing - 순서를 만드는 일, 
+조건, 시간의 순서에 따라서 여러 기능을 수행-반복 방지
+
+
+=== 동등 연산자
+<h3>1&lt;2</h3>   -> 1<2
+
+<함수 입력>
+매개변수 : parameter
+인자 : argument
+
+<객체>
+프로퍼티
+메소드
+
+
+cache-이미 읽었던 파일 저장
+다음에 열 때 네트워크 안통해도됨
+비용절감
+트래픽 감소, 속도 증가
+
+
+Library  vs. Framework
+라이브러리는 내가 원하는 것을 만들기 위한 부품
+프레임워크는 내가 원하는 것을 만들기 위한 체험학습
+(공통적인 부분[틀]이 이미 만들어져 있어서 틀에 맞게 필요한 부분을 수정하면됨)
+jQuery
+
+UI vs API
+User Interface 사용자가 직접 조작
+Application Programming Interface
+이미 있는 기능을 우리의 순서에 맞춰 실행시킬 수 있게 하는 장치
+(해당 프로그램 기능->다른 프로그램)
+(프로그래머(일반인X)사용)
+
+
+document  객체
+DOM 객체 : Document object Model  > document
+window 객체, 웹 브라우저
+ajax 웹페이지 리로드 없이 정보변경
+cookie 웹페이지 리로드되어도 현재 상태 유지(사용자를 위한 개인화된 서비스 제공 가능)
+offline web application
+webRTC 화상통신 웹 앱 만들 때
+speech API 음성 인식, 음성 정보
+webGL  3차원 그래픽 게임 같은 것 만들 때
+webVR
+
+CGI: Common Gateway Interface
+
+node.js 웹브라우저에 종속적인 Javascript를 외부에서 실행할 수 있는
+Runtime 환경을, Chrome V8엔진을 제공하여 여러 OS실행 가능
+호출 스택- 후입선출 Last in First out 
+이벤트- 선입선출 First in First out
+이벤트 드리븐:리스너(대기)
+Non-Blocking I/O: 비동기적 처리의 태스크들을 호출스택->TaskQ,
+ TaskQ->EventLoop=>스택 인 I/O의 형태
+이에 따라 실행 순서에 영향을 미침 
+내장객체 global, __filename, __dirname, process(쓰레드보다 상위, 프로그램 단위)
+
+Server Side Application : 서버쪽에서 웹페이지 자동 생성 -> node.js
+form : 사용자가 서버로 데이터를 전송할 때 사용하는 것
+
+리터럴 : 정보를 표현하는 방법, 기호
+
+parse : 분석한다는 뜻
+
+CRUD 정보시스템의 핵심적인 메커니즘(정보를 다루는 핵심적인 처리 방법)
+create
+read
+update
+delete
+
+모듈: 기본적으로 제공하는 기능을 비슷한 것끼리 그룹핑해놓은것

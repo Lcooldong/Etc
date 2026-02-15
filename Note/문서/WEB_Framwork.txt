@@ -1,0 +1,4 @@
+html - 정적(보여줌)
+javascript - 동적(상호작용), Web browser에 갇혀있음
+nodejs - 외부제어(PC 자체), 자동화(반복 제거)-> Web app(Web pages 공장)
+expressjs - nodejs 위에서 동작하는 Web Framework, 자동화(Framework)

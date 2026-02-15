@@ -1,0 +1,4 @@
+BEC - Backward Error Correction
+FEC - Forward Error Correction
+ECC - Error Control Code
+CRC - Cyclic Redundancy Check

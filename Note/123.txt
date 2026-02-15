@@ -1,0 +1,146 @@
+#include <inttypes.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <avr/sleep.h>
+#include <util/delay.h>
+
+
+void crossLED()
+{
+   DDRA = 0xff; 
+   
+   while(1)
+   {
+	 PORTA = 0x55;
+	 _delay_ms(200);
+	 PORTA = 0xaa;
+        _delay_ms(200);
+    }
+ }
+
+void stairLED()
+ {
+    DDRA = 0xff; 
+    
+   while(1)
+   {
+      int i;
+      PORTA = 0x01;
+      _delay_ms(100);
+      for(i= 0; i <7; i++)
+      {
+	PORTA = PORTA << 1;
+        _delay_ms(100); 
+      }
+   }
+}
+ 
+ void repeatLED()
+{
+    DDRA = 0xff; 
+ 
+   while(1)
+   {
+     int i, j;
+      
+     PORTA = 0x01;
+     for(i = 0; i <7; i++)
+     {
+	_delay_ms(50); 
+	PORTA = PORTA << 1;
+     }
+    for(j= 0; j <7; j++)
+    {
+       _delay_ms(50); 
+	PORTA = PORTA >>1;
+     }
+   }
+ }
+
+void repeatLED2()
+ {
+   unsigned char dir = 1;
+   DDRA = 0xff;
+   PORTA = 0x01;
+   
+   while(1)
+   {
+      _delay_ms(100);
+      if(dir)
+	 PORTA = PORTA << 1;
+      else
+	 PORTA = PORTA >>1;
+      
+      if (PORTA == 0x80)
+	 dir = 0;
+      else if(PORTA == 0x01)
+	 dir = 1;
+    }
+ }
+ 
+ 
+ 
+ 
+
+int main()
+{
+//   crossLED();
+//  stairLED();
+//   repeatLED();
+ //  repeatLED2();
+   DDRA = 0xFF;	// direction   1 : OUTPUT, 0:INPUT
+   
+   //LED CHECK
+   PORTA =  ~(PINB & 0x0f);
+   _delay_ms(1000);
+  
+   
+   DDRB = 0x00;
+   
+   while(1)
+   {
+//	 PORTA =  (PINB &0x0f) | ((~PINB)&0xf0);
+    }
+   
+   return 0;
+}
+
+
+
+
+#define DEBUG
+
+#ifndef DEBUG
+int main()
+ { 
+   DDRA = 0xFF;
+   PORTA = 0x01;
+
+   DDRB = 0xFF;
+   PORTB = 0x00;
+   
+   DDRC = 0xFF;
+   DDRF = 0XFF; 
+
+
+  const char Font[10] = {0xc0,0xf9,0xa4, // 0,1,2
+                                   0xb0,0x99,0x92, // 3,4,5
+                                   0x82,0xf8,0x80, // 6,7,8
+                                   0x90}; // 9
+   // Write your code here
+   while (1)
+   {
+/*
+        PORTA = PORTA << 1;
+        _delay_ms(1000);
+*/
+        PORTA = PINB;
+
+        PORTF= 0x40;
+        PORTC= Font[1];
+   
+   }
+      ;
+   return 0;
+ }
+ #endif
